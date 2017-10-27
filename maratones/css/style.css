@@ -1,0 +1,28 @@
+/*custom properties*/
+:root{
+--font-main:'Raleway', sans-serif;  
+--font-zise: 16px;
+--dg-color: #171226;
+--dg-color-opacity-9:rgba(23,18,38,9);
+--main-color: #0096D9;
+}
+html{
+    font-size:var(--font-zise);
+    font-family:var(--font-main);
+    
+}
+/*small- es <= 600px*/
+.Header{
+    background-color: var(--dg-color);
+    opacity: var(--dg-color-opacity-9);
+}
+/*acomodo del logotipo*/
+.brand-logo img{max-height: 64px}
+/*medium > 600px*/
+@media screen and (min-width:37.5em)
+
+/*large > 992px*/
+@media screen and (min-width:62em)
+
+/*extra large > 1200px*/
+@media screen and (min-width:75em)
