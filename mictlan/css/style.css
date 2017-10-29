@@ -1,0 +1,49 @@
+/*custom properties*/
+:root{
+--font-main:'Raleway', sans-serif;  
+--font-zise: 16px;
+--dg-color: #8624cc;
+--main-color: #0096D9;
+}
+html{
+    font-size:var(--font-zise);
+    font-family:var(--font-main);
+    
+}
+/*small- es <= 600px*/
+.Header{
+    background-color: var(--dg-color);
+}
+/*etiquetas gerericas*/
+.mt{margin-top: 15px;}
+.mt2{margin-top: 25px;}
+.ml{margin-left: 10px;}
+.ml2{margin-left: 25px;}
+.mb{margin-bottom: 15px;}
+/*barra de navegacion*/
+nav{
+    height:150px;
+}
+/*acomodo del logotipo*/
+.brand-logo img{
+    max-height: 100px;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.txt{
+    text-align: center;
+    color: #fff;
+}
+.cuadro{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+/*medium > 600px*/
+@media screen and (min-width:37.5em)
+
+/*large > 992px*/
+@media screen and (min-width:62em)
+
+/*extra large > 1200px*/
+@media screen and (min-width:75em)
