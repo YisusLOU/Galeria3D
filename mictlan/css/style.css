@@ -4,6 +4,7 @@
 --font-zise: 16px;
 --dg-color: #8624cc;
 --main-color: #0096D9;
+--sub-color: #70dce0;
 }
 html{
     font-size:var(--font-zise);
@@ -20,6 +21,8 @@ html{
 .ml{margin-left: 10px;}
 .ml2{margin-left: 25px;}
 .mb{margin-bottom: 15px;}
+.pd{padding: 10px;}
+.mg{margin: 15px;}
 /*barra de navegacion*/
 nav{
     height:150px;
@@ -38,6 +41,18 @@ nav{
 .cuadro{
     background-color: var(--main-color);
     border-radius: 10px;
+}
+
+.home{
+    height: 67px;
+    background-color:var(--sub-color) ;
+}
+
+.page-footer{
+    background-color: var(--main-color)
+}
+.page-footer img{
+     max-height: 50px;
 }
 /*medium > 600px*/
 @media screen and (min-width:37.5em)
