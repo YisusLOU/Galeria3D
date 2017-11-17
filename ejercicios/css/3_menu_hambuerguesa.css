@@ -1,0 +1,114 @@
+:root {
+    --font-size: 16px;
+    --font-family: sans-serif;
+    --color-main: #F0DB4F;
+    --color-secondary: #2b2b2b;
+    --color-main-opacity: rgba(240, 219, 79,.75);
+    --header-height: 4rem;
+}
+
+
+
+html{
+    font-family: var(--font-family);
+    font-size: : var(--font-size);
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    background-color: var(--color-main);
+}
+
+.Header-container{
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.logo a {position: absolute;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--calor-secondary);
+    transition: all .3s ease;
+}
+
+.Panel-button{
+    z-index: 999;
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+}
+
+.Panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-main-opacity)
+    transition: transform.3s ease;
+    transform: translate(0, -100%);
+    /*de arriba hacia abajo*/
+    overflow-y: auto;
+}
+
+.Panel.is-active{
+    transform: translate(0,0);
+}
+
+.Menu{
+    padding-top: var(--header-height);
+    margin: auto;
+    text-align: center;
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.Menu a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 1.5 rem;
+    transition: all 3s
+}
+
+.Menu a:hover{
+    background-color: var(--color-main);
+}
+
+.Content{
+    background: linear-gradient(#fff, #eee, #ddd,#ccc,#bbb,#aaa);
+    background: radial-gradient(45deg,#fff, #eee, #ddd,#ccc,#bbb,#aaa);
+    
+}
+
+.u-afterFixed{padding-top: var (--);}
+
+.hamburger.focus{
+    outline: 0;
+    border: 0;
+}
+
+.hamburger-inner{}
+.hamburger-inner.after{}
+.hamburger-inner.before{}
