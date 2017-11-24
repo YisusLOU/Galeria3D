@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;   
+    font-family: sans-serif;
+}
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+.figure{
+    background-color: #eee;
+    box-shadow: .1rem .1rem .05rem rgba(0,0,0,25);
+}
+
+.figure img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease;
+}
+
+.figure img:hover{
+    transform: rotate(45deg) scale(1.5);
+}
+
+.figure figcaption{
+    margin-top: auto;
+    font-weight: bold;
+    text-align: center;
+}
