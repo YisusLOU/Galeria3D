@@ -15,11 +15,11 @@
 <!--menu-->
  <nav class="Header">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center  hide-on-small-only"><img src="./img/logo.png" alt=""></a>
+      <a href="#!" class="brand-logo center hide-on-small-only"><img src="./img/logo.svg" alt=""></a>
       
       <a href="#!" class="brand-logo center  hide-on-med-and-up"><img src="./img/isologo.png" alt=""></a>
       
-      <a href="#" data-activates="mobile-demo" class="right  button-collapse"><i class="material-icons">menuz</i></a>
+      <a href="#" data-activates="mobile-demo" class="right  button-collapse"><i class="material-icons">menus</i></a>
       <ul class=" right barra  hide-on-med-and-down">
         <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
           <li><a href="#info"><i class="material-icons left">person</i>Info</a></li>
@@ -34,18 +34,60 @@
       </ul>
     </div>
   </nav>
+   <main>
     <!--titulo de la seccion-->       
-        <div class="row container mt2">
-         <div class="col  s12">
-         <a name="home"></a>
-        <h5 class=" cuadro txt">Home</h5>
-         </div>
-     </div>
+    <header class="HeaderImage" style="
+      --bg-url: url('../img/altar.jpg');
+      --bg-x: 50%;
+      --bg-y: top;
+      --bg-size: cover;
+      --bg-attach: fixed;
+    ">
+     
+      <div class="valign-wrapper">
+      <div class="container center">
+       <img class="logo center" src="./img/logo-01.png" alt="Mictlan">
+        </div> 
+         </div>      
+    </header>
+    <header class="HeaderImage" style="
+      --bg-url: url('../img/muerte-01.jpg');
+      --bg-x: 0%;
+      --bg-y: top;
+      --bg-size: cover;
+      --bg-attach: fixed;
+    ">
+     
+      <div class="valign-wrapper">
+        <h5 class="cul center flow-text white-text container">Mictlan es una galería digital 3D con temática del día de muertos retomando las tradiciones de los años 70 y adaptandolas a esta época contemporánea, para mostrara los jóvenes  lastradiciones de nativas de su país, en un entorno contemporáneo</h5>
+      </div>
+    </header>
+    
+     <header class="HeaderImage" style="
+      --bg-url: url('../img/altar2.jpg');
+      --bg-x: 50%;
+      --bg-y: top;
+      --bg-size: cover;
+      --bg-attach: fixed;
+    ">
+     
+      <div class="valign-wrapper">
+        <h5 class="cul center flow-text white-text container ">Está dirigido a un público de entre 16 a 40 años de edad (ultima generación de milenials y parte de generación de los años 70), que  vivan en la CDMX, sociable que guste de conocer lugares nuevos y salir con sus amigos, a convivir, que tenga gusto por las tradiciones de su país, interesado en eventos de carácter social.
+</h5>
+      </div>
+      
+    </header>
+</main>
    
-    <!--carrucel de imagenes XL-->       
+        
            
-    <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="./img/fold1.png"></a>
+     <div class="carousel  carousel-slider  container">
+       <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+     
+     <a class="carousel-item" href="#one!"><img src="./img/fold1.png"></a>
     <a class="carousel-item" href="#two!"><img src="./img/fold2.png"></a>
     <a class="carousel-item" href="#three!"><img src="./img/fold3.png"></a>
     <a class="carousel-item" href="#four!"><img src="./img/fold4.png"></a>
@@ -55,15 +97,23 @@
     <!-- imagen responsiva-->
 
     <div class="row  container  center-align  txt">
-    <div class="col s7 l7   home    mg"><p>eventos</p></div>
-    <div class="col s4  l4   home    mg"><p>boletos</p></div>
+   <div class="col l7">
+     <div class="col s7 l12   home    mg eve"><p>eventos</p></div>
+   
+    <div class="col s7 l12   home     mg  eve"><p>noticias</p></div>
     
-    <div class="col s7 l7   home     mg"><p>noticias</p></div>
-    <div class="col s4  l4  home    mg"><p>info de la galería</p> </div>
+    <div class="col s7 l12    home    mg eve"><p>noticias</p></div>
     
-    <div class="col s7 l7    home    mg"><p>noticias</p></div>
-    <div class="col s4  l4   home    mg"><p>exibiciones</p></div>
-  </div>
+    <div class="col s7 l12    home    mg eve"><p>noticias</p></div>
+    <div class="col s7 l12    home    mg eve"><p>noticias</p></div>
+ </div>
+    
+    <dvi class="col l5">
+     <div class="col s4  l12   home    mg cub"><p>boletos</p></div>
+      <div class="col s4  l12  home    mg  cub"><p>info de la galería</p> </div>  
+      <div class="col s4  l12   home    mg cub"><p>exibiciones</p></div> 
+      </dvi>
+     </div>
         
         
         <div class="row container mt2 mt2">
@@ -74,22 +124,22 @@
      </div>
     
          
-          <div class="row  container  center-align  txt">
-    <div class="col s5 l4  offset-l1 home   ml"><p>evento</p></div>
-    <div class="col s5  l4 offset-l2  home "><p>evento</p></div>
+          <div class="row  container  center-align  txt ">
+    <div class="col s5 l5  offset-s1   home    eve2"><p>evento</p></div>
+    <div class="col s5  l5  offset-s1 offset-l2 home eve2"><p>evento</p></div>
   </div>
        
         <div class="row  container  center-align  txt">
-    <div class="col s5 l4  offset-l1 home   ml"><p>evento</p></div>
-    <div class="col s5  l4 offset-l2  home "><p>evento</p></div>
+     <div class="col s5 l5 offset-s1  home   eve2"><p>evento</p></div>
+    <div class="col s5  l5  offset-s1 offset-l2 home  eve2"><p>evento</p></div>
   </div>
         
 <div class="row  container  center-align  txt" >
-    <div class="col s3 l3 ofset-l1  home  "><p>img</p>
+    <div class="col s3 l3 ofset-l1  home eve3 "><p>img</p>
     </div>
-    <div class="col s4 l4 offset-l1 home   "><p>img</p>
+    <div class="col s4 l4 offset-l1 offset-s1 home eve3  "><p>img</p>
     </div>
-    <div class="col s3 l3 offset-l1 home  "><p>img</p>
+    <div class="col s3 l3 offset-l1  offset-s1 home eve3 "><p>img</p>
     </div>
 </div>  
         
@@ -100,6 +150,7 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque vitae voluptate impedit, asperiores tempore aperiam sequi quisquam, natus temporibus inventore provident iste at adipisci, esse alias. Praesentium quidem, provident
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate enim voluptate aperiam amet, eum quos numquam quia similique, rerum? Quae delectus architecto in a, reiciendis minus quaerat commodi neque.
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque vitae voluptate impedit, asperiores tempore aperiam sequi quisquam, natus temporibus inventore provident iste at adipisci, esse alias. Praesentium quidem, provident
+    lore
     .</p>
     </div>
     </div>
@@ -119,28 +170,10 @@
     </div>
 </div>  
        
-        <div class="row  container center-align">
-        <div class="col s12 l5">
-          <div class="card">
-            <div class="card-image">
-              <img src="./img/ztiven.png">
-              <span class="card-title">Steven Universe</span>
-            </div>
-            <div class="card-content">
-              <p>descricción del producto, en te caso una serie de cartoon network "SU"</p>
-            </div>
-            <div class="card-action">
-              <a href="#">Comprar</a>
-            </div>
-            </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        
        
        <div class="row  container center-align   ">
-        <div class="col s12 l5">
+        <div class="col s12 l4  ">
           <div class="card ">
             <div class="card-image">
               <img src="./img/ztiven.png">
@@ -154,27 +187,57 @@
             </div>
             </div>
           </div>
+          
+           <div class="col s12 l4 ">
+          <div class="card ">
+            <div class="card-image">
+              <img src="./img/ztiven.png">
+              <span class="card-title">Steven Universe</span>
+            </div>
+            <div class="card-content">
+              <p>descricción del producto, en te caso una serie de cartoon network "SU"</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+            </div>
+          </div>
+          
+           <div class="col s12 l4 ">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/ztiven.png">
+              <span class="card-title">Steven Universe</span>
+            </div>
+            <div class="card-content">
+              <p>descricción del producto, en te caso una serie de cartoon network "SU"</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+            </div>
+            </div>
         </div>
-      </div>
+   
        
-       
-       <div class="row container  center-align  txt">
-        <div class="col s6 l3  home ">
-            <p>img</p>
-        </div>   
-        <div class="col s6 l3  home  ">
-            <p>img</p>
-        </div>   
-        </div>   
-           
-            <div class="row container  center-align  txt">
-        <div class="col s6 l3 ofset-l1 home ">
-            <p>img</p>
-        </div>   
-        <div class="col s6 l3 ofset-s1 home  ">
-            <p>img</p>
-        </div>   
-        </div>   
+        <div class="row  container  center-align  txt" >
+    <div class="col s3 l3 ofset-l1  home  "><p>img</p>
+    </div>
+    <div class="col s4 l4 offset-l1  home   "><p>img</p>
+    </div>
+    <div class="col s3 l3 offset-l1 home  "><p>img</p>
+    </div>
+</div>  
+     
+      <div class="row  container  center-align  txt" >
+    <div class="col s3 l3 ofset-l1  home  "><p>img</p>
+    </div>
+    <div class="col s4 l4 offset-l1  home   "><p>img</p>
+    </div>
+    <div class="col s3 l3 offset-l1 home  "><p>img</p>
+    </div>
+</div>  
+      
       
        
        <div class="row  container  center-align  txt" >
@@ -198,7 +261,7 @@
                 <p class="grey-text text-lighten-4">Galería 3D inspirada en la epoca de los 70 con tematica de dia de muertos  </p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text"><img src="./img/logo.png" alt="logo footer"></h5>
+                <h5 class="white-text"><img src="./img/logo.svg" alt="logo footer"></h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#home">Home</a></li>
                   <li><a class="grey-text text-lighten-3" href="#info">Info</a></li>
@@ -209,7 +272,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2017 Copyright Mictlan
+            © 2018 Copyright Mictlan
             <a class="grey-text text-lighten-4 right" href=" htttp://www.iconos.edu.mx">iconos</a>
             </div>
           </div>

@@ -5,8 +5,9 @@
     });
     
      $(d).ready(function(){
-      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
     });
+     
 })
 (Document,window,navigator,console.log,jQuery);
 

@@ -1,10 +1,63 @@
 /*custom properties*/ 
 :root{
---font-main:'Raleway', sans-serif;  
+--font-main: 'roboto';  
 --font-zise: 16px;
---dg-color: #8624cc;
+--dg-color: #1C1B21;
 --main-color: #0096D9;
 --sub-color: #70dce0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+
+main { flex: 1 0 auto; }
+
+.Header,
+.page-footer { background-color: #1C1B21; }
+
+
+.side-nav {
+  background-color: rgba(255, 255, 255,.70); 
+  
+}
+.brand-logo img{
+   min-width: 30vh;
+}
+.button-collapse:hover {
+  color: #64BEB6;
+}
+
+.HeaderImage {
+  width: 100%;
+  min-height: 100vh;
+  /* La NavBar del framework tiene una altura de 64px por ello hay que aplicar 32px de margen arriba y abajo */
+  margin-top: 0rem;    
+  margin-bottom: -2rem;
+  background-repeat: no-repeat;
+  background-image: var(--bg-url);
+  background-position-x: var(--bg-x);
+  background-position-y: var(--bg-y);
+  background-size: var(--bg-size);
+  background-attachment: var(--bg-attach);
+}
+
+.HeaderImage > div{
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, .40);
+}
+
+.logo{
+    max-height:210px;
+  
+}
+
+.SocialMedia {
+  display: flex;
+  justify-content: space-around;
 }
 html{
     font-size:var(--font-zise);
@@ -34,6 +87,7 @@ nav{
     margin-left: -20px;
 }
 
+
 .txt{
     text-align: center;
     color: #fff;
@@ -44,15 +98,43 @@ nav{
 }
 
 .home{
-    height: 67px;
     background-color:var(--sub-color) ;
 }
-
+.page-footer img {
+    min-height: 70px;
+    
+}
 .page-footer{
-    background-color: var(--main-color)
+    background-color: var(--dg-color)
 }
 .page-footer img{
-     max-height: 50px;
+    height: 50px;
+}
+
+.eve{
+    background-image: url(eventos.jpg);
+    height: 130px;
+    width: auto;
+    
+}
+
+.cub{
+    background-image: url(boletos.jpg);
+    height: 236px;
+}
+
+.eve2{
+    background-image: url(noticias1.jpg);
+    height: 130px;
+    width: auto;
+    
+}
+
+.eve3{
+    background-image: url(noticias3.jpg);
+    height: 130px;
+    width: auto;
+    
 }
 
 /*medium > 600px*/

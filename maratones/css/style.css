@@ -1,29 +1,126 @@
-/*custom properties*/
-:root{
---font-main:'Comfortaa', cursive;
-;  
---font-zise: 16px;
---dg-color: #171226;
---dg-color-opacity-9:rgba(23,18,38,9);
---main-color: #0096D9;
-}
-html{
-    font-size:var(--font-zise);
-    font-family:var(--font-main);
-    
-}
-/*small- es <= 600px*/
-.Header{
-    background-color: var(--dg-color);
-    opacity: var(--dg-color-opacity-9);
-}
-/*acomodo del logotipo*/
-.brand-logo img{max-height: 64px}
-/*medium > 600px*/
-@media screen and (min-width:37.5em)
+/*
+Propiedades Flexbox CSS
+https://codepen.io/jonmircha/pen/aWWbre
+*/
 
-/*large > 992px*/
-@media screen and (min-width:62em)
+/* custom properties */
+:root {
+  --font-main: 'Raleway', sans-serif;
+  --font-size: 16px;
+  --bg-color: #171226;
+  --bg-color-opacity-9: rgba(23, 18, 38, .9);
+  --main-color: #0096D9;
+  --main-color-opacity-75: rgba(0, 150, 217, .75);
+}
 
-/*extra large > 1200px*/
-@media screen and (min-width:75em)
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-main);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main { flex: 1 0 auto; }
+
+/* small <= 600px */
+.Header,
+.page-footer { background-color: var(--bg-color); }
+
+.button-collapse:hover {
+  color: var(--main-color);
+}
+
+.side-nav {
+  background-color: var(--main-color-opacity-75);
+}
+
+.side-nav li:hover {
+  background-color: var(--bg-color-opacity-9);
+}
+
+.side-nav li > a {
+  color: #FFF;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+.side-nav a:hover {
+  transform: translateX(1.5rem);
+  color: #FFF;
+}
+
+.desktop-nav a {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.desktop-nav a:hover {
+  background-color: var(--main-color-opacity-75);
+}
+
+.brand-logo img { max-height: 64px; }
+
+.SocialMedia {
+  display: flex;
+  justify-content: space-around;
+}
+
+.HeaderImage {
+  width: 100%;
+  min-height: 100vh;
+  /* La NavBar del framework tiene una altura de 64px por ello hay que aplicar 32px de margen arriba y abajo */
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  background-repeat: no-repeat;
+  background-image: var(--bg-url);
+  background-position-x: var(--bg-x);
+  background-position-y: var(--bg-y);
+  background-size: var(--bg-size);
+  background-attachment: var(--bg-attach);
+}
+
+.HeaderImage > div{
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.HeaderImage h2 {
+  padding: 0 3vh;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+.Sentence {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3vw;
+  color: #FFF;
+  background: linear-gradient(var(--main-color), var(--bg-color));
+}
+
+.Sentence blockquote {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.Sentence cite { font-size: 2vw; }
+
+/* medium > 600px */
+@media screen and (min-width: 37.5em) {
+
+}
+
+/* large > 992px */
+@media screen and (min-width: 62em) {
+
+}
+
+/* extralarge > 1200px */
+@media screen and (min-width: 75em) {
+}

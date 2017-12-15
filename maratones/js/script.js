@@ -1,9 +1,12 @@
 ;
-(function(d,w,n,c,$){
-    // documento que se activa cuando el HTML ah cargado el navegador
-    $(d).ready(function(){
-    // metodo que activa la barra de navegacion    
-      $(".button-collapse").sideNav()   
+(function (d, w, n, c, $) {
+  //Programación que se activa cuando el documento HTML ha cargado en el navegador
+  $(d).ready(function () {
+    //método que activa el la barra de navegación
+    //http://materializecss.com/side-nav.html
+    $(".button-collapse").sideNav({
+      /* edge: 'right' */
+      menuWidth: '80%'
     })
-    
-})(Document,window,navigator,console.log,jQuery);
+  })
+})(document, window, navigator, console.log, jQuery);
