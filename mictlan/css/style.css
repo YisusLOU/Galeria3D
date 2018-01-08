@@ -26,6 +26,7 @@ main { flex: 1 0 auto; }
 }
 .brand-logo img{
    min-width: 30vh;
+   padding-top: 2vh;
 }
 .button-collapse:hover {
   color: #64BEB6;
@@ -46,7 +47,8 @@ main { flex: 1 0 auto; }
 }
 
 .HeaderImage > div{
-  min-height: inherit;
+  min-height:inherit;
+    margin-top: 2vh;
   background-color: rgba(0, 0, 0, .40);
 }
 
@@ -59,11 +61,7 @@ main { flex: 1 0 auto; }
   display: flex;
   justify-content: space-around;
 }
-html{
-    font-size:var(--font-zise);
-    font-family:var(--font-main);
-    
-}
+
 /*small- es <= 600px*/
 .Header{
     background-color: var(--dg-color);
@@ -90,16 +88,14 @@ nav{
 
 .txt{
     text-align: center;
-    color: #fff;
+    color: var(--dg-color);
 }
 .cuadro{
     background-color: var(--main-color);
     border-radius: 10px;
 }
 
-.home{
-    background-color:var(--sub-color) ;
-}
+
 .page-footer img {
     min-height: 70px;
     
@@ -137,6 +133,13 @@ nav{
     
 }
 
+.pt{padding-top: 7vh;}
+
+
+.slider img{
+ background-color: rgba(0, 0, 0,.70); 
+     
+}
 /*medium > 600px*/
 @media screen and (min-width:37.5em)
 
